@@ -1,0 +1,70 @@
+
+
+  
+body{
+	
+	background-color: #dee1dd;
+	font-family: Tahoma, sans-serif;
+	
+}
+
+        /* Container styles */
+.container {
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Top bar styles */
+        .top-bar {
+            background-color: #a1aa9b;
+            height: 67px;
+            width: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            color: #333;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            
+        }
+
+        /* Sidebar styles */
+        .sidebar {
+            width: 10%;
+            min-width: 50px;
+            max-width: 80px;
+            height: 100vh;
+            background-color: #a1aa9b;
+            position: fixed;
+            top: 86px;
+            left: 0;
+        }
+
+        /* Main section styles */
+        .main {
+            background-color: #dee1dd;
+            height: 2000px; /* Just for demonstration */
+            margin-left: 50px;
+            padding: 10px;
+            
+        }
+
+        /* Logo styles */
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        /* Logo image styles */
+        .logo img {
+	       height: 100px;
+	       width: 160px;
+	       margin-right: 10px;
+        } 
+
+        /* Sign Up/Log In styles */
+        .sign-up-log-in {
+            display: flex;
+        }
