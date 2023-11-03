@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Rentify</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Container styles */
+        .container {
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Top bar styles */
+        .top-bar {
+            background-color: #5D8700;
+            height: 67px;
+            width: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            color: #333;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            
+        }
+
+        /* Sidebar styles */
+        .sidebar {
+            width: 10%;
+            min-width: 50px;
+            max-width: 80px;
+            height: 100vh;
+            background-color: #82B300;
+            position: fixed;
+            top: 86px;
+            left: 0;
+        }
+
+        /* Main section styles */
+        .main {
+            background-color: #BEED53;
+            height: 2000px; /* Just for demonstration */
+            margin-left: 50px;
+            padding: 10px;
+            
+        }
+
+        /* Logo styles */
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        /* Logo image styles */
+        .logo img {
+            height: 50px;
+            width: 50px;
+            margin-right: 10px;
+        }
+
+        /* Sign Up/Log In styles */
+        .sign-up-log-in {
+            display: flex;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="top-bar">
+
+            <div class="logo">
+                <img src="apt.png" alt="Rentify Logo">
+                <h2>Rentify</h2>
+            </div>
+
+            <div class="sign-up-log-in">
+                <p>sign up/log in&#160&#160&#160&#160&#160&#160</p>
+            </div>
+
+        </div>
+
+        <div class="sidebar">
+            <h3></h3>
+            <img src="search.png" alt="search symbol" height="45" width="50">
+            
+            <img src="message.png" alt="search symbol" height="60" width="60">
+            <img src="profile.png" alt="search symbol" height="45" width="45">
+            <img src="notification.png" alt="search symbol" height="45" width="45">
+        </div>
+
+        <div class="main">
+            <!-- Add your main content here -->
+        </div>
+    </div>
+</body>
+
+</html>
