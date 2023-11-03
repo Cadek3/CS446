@@ -1,0 +1,89 @@
+/*CSS file*/
+.main {
+	padding: 20px;
+}
+  
+/* Logo styles */
+.logo {
+	display: flex;
+	align-items: center;
+}
+
+/* Logo image styles */
+.logo img {
+	height: 100px;
+	width: 160px;
+	margin-right: 10px;
+} 
+
+.topbar{
+	
+	height: 75px;
+	width: 100%;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	background-color: #a1aa9b;
+	overflow: hidden;
+	border: 10px;
+	border-color: black;
+	
+}
+
+.topbar a{
+	
+	float: left;
+	color: #889480;
+	text-align: left;
+	padding: 14px 16px;
+	font-size:35px;
+	text-decoration: none;
+	
+}
+
+
+.topbar a.Title{
+	
+	font-size: 50px;
+	
+}
+
+.sidebar{
+	
+	height: 100%;
+	width: 240px;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	background-color: #a1aa9b;
+	overflow-x: hidden;
+	padding-top: 20px;
+	
+}
+
+.sidebar a{
+	
+	padding: 6px 6px 6px 15px;
+	text-decoration: none;
+	font-size: 25px;
+	color: #000000;
+	display: block;
+	padding: 10px 15px;
+
+}
+
+.sidebar a:hover{
+	
+	color: #c0c9ba;
+	
+}
+
+body{
+	
+	background-color: #dee1dd;
+	font-family: Tahoma, sans-serif;
+	
+}
+
