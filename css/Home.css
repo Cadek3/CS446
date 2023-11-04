@@ -2,12 +2,7 @@
 .main {
 	padding: 20px;
 }
-body{
-	
-	background-color: #dee1dd;
-	font-family: Tahoma, sans-serif;
-	
-}
+  
 /* Logo styles */
 .logo {
 	display: flex;
@@ -61,7 +56,7 @@ body{
 	height: 100%;
 	width: 240px;
 	position: fixed;
-	z-index: 2;
+	z-index: 1;
 	top: 0;
 	left: 0;
 	background-color: #a1aa9b;
@@ -87,7 +82,14 @@ body{
 	
 }
 
-.about-us-msg {
+body{
+	
+	background-color: #dee1dd;
+	font-family: Tahoma, sans-serif;
+	
+}
+
+.welcome-msg {
     position: relative;
     top: 75px;
     left: 280px; 
@@ -103,109 +105,15 @@ body{
 	line-height: 2;
 }
 
-.about-us-msg h2 {
+.welcome-msg h2 {
     font-size: 30px;
     margin-bottom: 10px;
     margin-left: -2px;
 }
 
-.about-us-msg img {
+.welcome-msg img {
     margin-top: 20px;
-	margin-left: 30px;
-    width: 600px;
+	margin-left: 70px;
+    width: 500px;
     height: 300px;
 }
-
-/* Contact info */
-.contact-section {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.contact-us {
-    width: 100%; 
-    text-align: left;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-}
-
-.contact-us h2 {
-    font-size: 24px;
-    margin-top: 50px;
-    margin-bottom: 10px;
-	margin-left: -250px;
-}
-.contact-us .contact-content {
-	display: flex;
-    flex-wrap: wrap;
-}
-
-.contact-us .contact-form {
-    flex: 1; 
-    min-width: 500px;
-    padding: 20px;
-    background-color: #f9f9f9;
-    border: 1px solid #ccc;
-    max-height: 500px;
-    overflow-y: auto;
-    margin-bottom: 40px; 
-}
-
-.contact-us .contact-info {
-    flex: 1; 
-    max-width: 300px;
-    font-size: 20px;
-    line-height: 2;
-    padding: 20px;
-	text-align: right;
-}
-
-
-.contact-us .contact-content {
-    display: flex;
-}
-
-.contact-us .contact-form {
-    flex: 1;
-	max-width: 300px;
-    margin: 20px;
-    padding: 20px;
-    background-color: #f9f9f9; 
-    border: 1px solid #ccc; 
-    max-height: 300px; 
-    overflow-y: auto;
-}
-
-.contact-us .contact-info {
-    flex: 1;
-}
-.contact-us .contact-form input[type="text"],
-.contact-us .contact-form input[type="email"],
-.contact-us .contact-form textarea {
-    margin-bottom: 10px;
-    padding: 8px;
-    width: calc(100% - 18px); 
-    box-sizing: border-box;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
-
-.contact-us .contact-form textarea {
-    height: 100px; 
-}
-
-.contact-us .contact-form button {
-    padding: 8px 15px;
-    color:black;
-	background-color: #dee1dd;
-    border: none;
-    cursor: pointer;
-    border-radius: 4px; 
-}
-
-.contact-us .contact-form button:hover {
-    background-color: #889480; /
-}
-
