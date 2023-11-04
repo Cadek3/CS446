@@ -21,37 +21,39 @@ body{
 	margin-right: 10px;
 } 
 
-.topbar{
-	
-	height: 75px;
-	width: 100%;
-	position: fixed;
-	z-index: 1;
-	top: 0;
-	left: 0;
-	background-color: #a1aa9b;
-	overflow: hidden;
-	border: 10px;
-	border-color: black;
-	
+.topbar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 75px;
+    background-color: #a1aa9b;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    z-index: 1;
 }
 
-.topbar a{
-	
-	float: left;
-	color: #889480;
-	text-align: left;
-	padding: 14px 16px;
-	font-size:35px;
-	text-decoration: none;
-	
+.topbar a {
+    color: #000000;
+    text-decoration: none;
+    font-size: 20px;
 }
 
+.topbar-buttons a {
+    margin-left: 10px;
+    padding: 5px 10px;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    color: #000000;
+    text-decoration: none;
+    font-size: 16px;
+}
 
-.topbar a.Title{
-	
-	font-size: 50px;
-	
+.topbar-buttons a:hover {
+    background-color: #889480;
+    color: white;
 }
 
 .sidebar{
@@ -59,7 +61,7 @@ body{
 	height: 100%;
 	width: 240px;
 	position: fixed;
-	z-index: 1;
+	z-index: 2;
 	top: 0;
 	left: 0;
 	background-color: #a1aa9b;
@@ -85,33 +87,136 @@ body{
 	
 }
 
-/* Additional CSS for image and text layout */
-.welcome-message {
-    position: absolute;
+.about-us-msg {
+    position: relative;
     top: 75px;
-    left: 240px;
-    width: calc(100% - 240px);
+    left: 280px; 
+    width: calc(100% - 280px);
     display: flex;
     align-items: flex-start;
 }
 
 .text-content {
     max-width: 500px;
-    margin-right: 20px; 
+    margin-right: 20px;
     margin-left: 30px;
+	line-height: 2;
 }
 
-.welcome-message h2 {
+.about-us-msg h2 {
     font-size: 30px;
     margin-bottom: 10px;
-    margin-left: -5px;
+    margin-left: -2px;
 }
 
-.welcome-message img {
+.about-us-msg img {
     margin-top: 20px;
-    width: 200px;
-    height: 280px;
+	margin-left: 30px;
+    width: 600px;
+    height: 300px;
 }
+
+/* Contact info */
+.contact-section {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contact-us {
+    width: 100%; 
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.contact-us h2 {
+    font-size: 24px;
+    margin-top: 50px;
+    margin-bottom: 10px;
+	margin-left: -250px;
+}
+.contact-us .contact-content {
+	display: flex;
+    flex-wrap: wrap;
+}
+
+.contact-us .contact-form {
+    flex: 1; 
+    min-width: 500px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    max-height: 500px;
+    overflow-y: auto;
+    margin-bottom: 40px; 
+}
+
+.contact-us .contact-info {
+    flex: 1; 
+    max-width: 300px;
+    font-size: 20px;
+    line-height: 2;
+    padding: 20px;
+	text-align: right;
+}
+
+
+.contact-us .contact-content {
+    display: flex;
+}
+
+.contact-us .contact-form {
+    flex: 1;
+	max-width: 300px;
+    margin: 20px;
+    padding: 20px;
+    background-color: #f9f9f9; 
+    border: 1px solid #ccc; 
+    max-height: 300px; 
+    overflow-y: auto;
+}
+
+.contact-us .contact-info {
+    flex: 1;
+}
+.contact-us .contact-form input[type="text"],
+.contact-us .contact-form input[type="email"],
+.contact-us .contact-form textarea {
+    margin-bottom: 10px;
+    padding: 8px;
+    width: calc(100% - 18px); 
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.contact-us .contact-form textarea {
+    height: 100px; 
+}
+
+.contact-us .contact-form button {
+    padding: 8px 15px;
+    color:black;
+	background-color: #dee1dd;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px; 
+}
+
+.contact-us .contact-form button:hover {
+    background-color: #889480; /
+}
+
+
+
+
+
+
+
+
+
 
 
   
