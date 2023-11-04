@@ -2,8 +2,9 @@
 <html>
 
 <head>
-    <title>Rentify Profile</title>
-    <link rel = "stylesheet" href = "css/profileCSS.css" type = "text/css"/>
+    <title>Rentify</title>
+    <link rel="stylesheet" href="css/profileCSS.css" type="text/css" />
+    
 </head>
 
 <body>
@@ -11,30 +12,64 @@
         <div class="top-bar">
 
             <div class="logo">
-                <img src="images/apt.png" alt="Rentify Logo">
-                <h2>Rentify</h2>
+                <img src="images/rentifyLogo.png" alt="Rentify Logo" onclick="window.location.href='Home.html'">
+
             </div>
 
-            <div class="sign-up-log-in">
-                <p>sign up/log in&#160&#160&#160&#160&#160&#160</p>
+            <div class="sign-up-log-in" style="margin-left: 100px;">
+                <button onclick="window.location.href='signup.html'">Sign Up</button>
+                <button onclick="window.location.href='login.html'">Log In</button>
             </div>
+
+
 
         </div>
 
         <div class="sidebar">
             <h3></h3>
-            <img src="images/search.png" alt="search symbol" height="45" width="50">
-            
-            <img src="images/message.png" alt="search symbol" height="60" width="60">
-            <img src="images/profile.png" alt="search symbol" height="45" width="45">
-            <img src="images/notification.png" alt="search symbol" height="45" width="45">
-            <img src="images/aboutUs.png" alt="search symbol" height="45" width="45">
+            <img id="search-image" src="images/search.png" alt="search symbol" height="45" width="50">
+
+            <img src="images/message.png" alt="message symbol" height="60" width="60" onclick="window.location.href='messages.html'">
+            <img src="images/profile.png" alt="search symbol" height="45" width="45" onclick="window.location.href='profile.html'">
+            <img src="images/notification.png" alt="search symbol" height="45" width="45" onclick="window.location.href='notifications.html'">
+            <img src="images/aboutUs.png" alt="search symbol" height="45" width="45" onclick="window.location.href='aboutus.html'">
         </div>
 
         <div class="main">
+            <div class="profile-section">
+                <img src="images/profile_placeholder.png" alt="Profile Picture" hight="60" width="60" class="profile-picture">
+                <h2 contenteditable="true">User1212093</h2>
+                <p contenteditable="true">User's Bio</p>
+
+                <div class="profile-details">
             
+                    <p><strong>Comunity:</strong> <span contenteditable="true">Good Neighborhood </span></p>
+                    <p><strong>Joined:</strong> January 1, 2023</p>
+                    <p><strong>Interests:</strong> <span contenteditable="true">Programming, Traveling, Cooking</span></p>
+                </div>
+
+                <div class="post-section">
+                    <h3>Posts</h3>
+                    
+                    <div class="post" contenteditable="true">
+                
+                    </div>
+           
+            </div>
+        
+                <button onclick="addPost()">Add Post</button>
+
+            </div>
+            <div id="search-popup">
+                <input type="text" placeholder="Search...">
+            </div>
         </div>
+
+        <script src="script.js"></script>
     </div>
+
+   
+   
 </body>
 
 </html>
