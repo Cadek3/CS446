@@ -85,35 +85,5 @@
 body{
 	
 	background-color: #dee1dd;
-	font-family: Tahoma, sans-serif;
-	
-}
-
-.welcome-msg {
-    position: relative;
-    top: 75px;
-    left: 280px; 
-    width: calc(100% - 280px);
-    display: flex;
-    align-items: flex-start;
-}
-
-.text-content {
-    max-width: 500px;
-    margin-right: 20px;
-    margin-left: 30px;
-	line-height: 2;
-}
-
-.welcome-msg h2 {
-    font-size: 30px;
-    margin-bottom: 10px;
-    margin-left: -2px;
-}
-
-.welcome-msg img {
-    margin-top: 20px;
-	margin-left: 70px;
-    width: 500px;
-    height: 300px;
+	font-family: Tahoma, sans-serif;	
 }
