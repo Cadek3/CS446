@@ -16,37 +16,39 @@
 	margin-right: 10px;
 } 
 
-.topbar{
-	
-	height: 75px;
-	width: 100%;
-	position: fixed;
-	z-index: 1;
-	top: 0;
-	left: 0;
-	background-color: #a1aa9b;
-	overflow: hidden;
-	border: 10px;
-	border-color: black;
-	
+.topbar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 75px;
+    background-color: #a1aa9b;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    z-index: 1;
 }
 
-.topbar a{
-	
-	float: left;
-	color: #889480;
-	text-align: left;
-	padding: 14px 16px;
-	font-size:35px;
-	text-decoration: none;
-	
+.topbar a {
+    color: #000000;
+    text-decoration: none;
+    font-size: 20px;
 }
 
+.topbar-buttons a {
+    margin-left: 10px;
+    padding: 5px 10px;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    color: #000000;
+    text-decoration: none;
+    font-size: 16px;
+}
 
-.topbar a.Title{
-	
-	font-size: 50px;
-	
+.topbar-buttons a:hover {
+    background-color: #889480;
+    color: white;
 }
 
 .sidebar{
@@ -87,3 +89,31 @@ body{
 	
 }
 
+.welcome-msg {
+    position: relative;
+    top: 75px;
+    left: 280px; 
+    width: calc(100% - 280px);
+    display: flex;
+    align-items: flex-start;
+}
+
+.text-content {
+    max-width: 500px;
+    margin-right: 20px;
+    margin-left: 30px;
+	line-height: 2;
+}
+
+.welcome-msg h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+    margin-left: -2px;
+}
+
+.welcome-msg img {
+    margin-top: 20px;
+	margin-left: 70px;
+    width: 500px;
+    height: 300px;
+}
