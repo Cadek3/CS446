@@ -51,6 +51,34 @@
     color: white;
 }
 
+.button1 a {
+    
+    padding: 5px 10px;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    color: #000000;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.button1 a:hover {
+    background-color: #889480;
+    color: white;
+}
+.button2 a {
+    margin-left: 50px;
+    padding: 5px 10px;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    color: #000000;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.button2 a:hover {
+    background-color: #889480;
+    color: white;
+}
 .sidebar{
 	
 	height: 100%;
@@ -92,7 +120,7 @@ body{
 .welcome-msg {
     position: relative;
     top: 75px;
-    left: 280px; 
+    left: 280px;
     width: calc(100% - 280px);
     display: flex;
     align-items: flex-start;
@@ -102,7 +130,7 @@ body{
     max-width: 500px;
     margin-right: 20px;
     margin-left: 30px;
-	line-height: 2;
+    line-height: 2;
 }
 
 .welcome-msg h2 {
@@ -111,9 +139,49 @@ body{
     margin-left: -2px;
 }
 
-.welcome-msg img {
+.welcome-msg .image-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.welcome-msg .image-container img {
+    max-width: 100%;
     margin-top: 20px;
-	margin-left: 70px;
+    margin-left: 50px;
     width: 500px;
     height: 300px;
+}
+
+.welcome-msg .image-container img:nth-child(2) {
+    margin-top: 20px;
+    margin-left: -550px;
+    width: 500px;
+    height: 300px;
+}
+
+.welcome-msg h1 {
+    font-size: 30px; /* Adjust the font size as needed */
+    margin-top: -300px; /* Adjust the top margin as needed */
+    margin-left: 50px; /* Adjust the left margin to position it to the right of the second image */
+}
+.welcome-msg .signup-p {
+    max-width: 500px;
+    margin-right: 20px;
+    margin-left: 50px;
+    line-height: 2;
+}
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ffffff;
+    padding: 20px;
+    border: 1px solid #000000;
+    z-index: 2;
+}
+
+.popup-content {
+    text-align: center;
 }

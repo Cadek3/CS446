@@ -9,7 +9,7 @@
 	
 		<title>Rentify.</title>
 		<link rel = "stylesheet" href = "css/Home.css" type = "text/css"/>
-	
+		<script src="signup.js" defer></script>
 	</head>
 
 	<body>
@@ -28,9 +28,34 @@
 				<p>We are Rentify, your go-to platform for vibrant and connected living communities!
 					 Our user-friendly interface enhances communication and information sharing between 
 					 residents and managers of various living spaces. We're thrilled to have you on board!</p>
-				<a href="AboutUs.html"><button class="topbar-buttons">Learn More</button></a>
+				<div class="button1">
+				 <a href="AboutUs.html">Learn More</a>
+				</div>	
 			</div>
-			<img src="images/jed-villejo-bEcC0nyIp2g-unsplash.jpg" alt="People Running">
+			<div class="image-container">
+				<img src="images/jed-villejo-bEcC0nyIp2g-unsplash.jpg" alt="People Running">
+				<img src="images/community.png" alt="Second Image">
+				<h1>JOIN YOUR COMMUNITY</h1>
+				<p class="signup-p">Join Rentify today to discover and connect with people that match your lifestyle. 
+					Sign up now and find out what's going on in your community!</p>
+				<div class="button2">
+					<a href="#" id="openPopup">Find Your Community</a>
+				</div>
+				<div class="popup" id="signupPopup">
+					<div class="popup-content">
+						<!-- Your sign-up form goes here -->
+						<form>
+							<!-- Form fields go here -->
+							<label for="username">Username:</label>
+							<input type="text" id="username" name="username" required>
+							<!-- Add other form fields as needed -->
+							<button type="submit">Sign Up</button>
+						</form>
+						<button id="closePopup">Close</button>
+					</div>
+				</div>	
+			</div>
+			
 		</div>
 		<div class = "sidebar">
 			<div class="logo">
