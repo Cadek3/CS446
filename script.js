@@ -73,7 +73,7 @@ function toggleDropArea(buttonId) {
                     imageItem.className = 'image-item';
 
                     const promptText = document.createElement('div');
-                    promptText.textContent = 'Enter a caption (Max 30 character):';
+                    promptText.textContent = 'Enter a caption (Max 70 character):';
 
                     const imgPreview = document.createElement('img');
                     imgPreview.src = e.target.result;
@@ -84,7 +84,7 @@ function toggleDropArea(buttonId) {
 
                     const imageName = document.createElement('input');
                     imageName.type = 'text';
-                    imageName.maxLength = 50;
+                    imageName.maxLength = 70;
                     imageName.placeholder = 'Enter Caption';
 
                     const submitButton = document.createElement('button');
