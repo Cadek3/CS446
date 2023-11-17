@@ -37,7 +37,7 @@
 
         <div class="main">
             <div class="profile-section">
-                <img src="images/profile_placeholder.png" alt="Profile Picture" hight="60" width="60" class="profile-picture">
+                <img src="images/profile_placeholder.png" alt="Profile Picture" hight="100" width="100" class="profile-picture">
                 <h2 contenteditable="true">User1212093</h2>
                 <p contenteditable="true">User's Bio</p>
 
@@ -57,7 +57,14 @@
            
             </div>
         
-                <button onclick="addPost()">Add Post</button>
+                <button id="myToggleButton" onclick="toggleDropArea('myToggleButton')"> + </button>
+                
+                <div id="drop-area" ondragover="handleDragOver(event)" ondrop="handleDrop(event)" ondragenter="handleDragEnter(event)" ondragleave="handleDragLeave(event)">
+                    <p>Drag and drop images </p>
+                    <input type="file" id="file-input" style="display: none;" multiple onchange="handleFileInput()">
+                </div>
+
+                <div id="image-container"></div>
 
             </div>
             <div id="search-popup">
