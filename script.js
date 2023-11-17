@@ -84,7 +84,7 @@ function toggleDropArea(buttonId) {
 
                     const imageName = document.createElement('input');
                     imageName.type = 'text';
-                    imageName.maxLength = 30;
+                    imageName.maxLength = 50;
                     imageName.placeholder = 'Enter Caption';
 
                     const submitButton = document.createElement('button');
