@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', function () {
             searchPopup.style.display = 'none';
         }
     });
-});
+}); 
 function toggleDropArea(buttonId) {
         const dropArea = document.getElementById('drop-area');
         const button = document.getElementById(buttonId);
