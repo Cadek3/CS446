@@ -1,0 +1,164 @@
+<!--html file-->
+
+<!doctype html>
+<html lang = "en-US">
+
+<html>
+	
+	<head>
+	
+		<title>Rentify.</title>
+		<link rel = "stylesheet" href = "HomeStyle.css" type = "text/css"/>
+	
+	</head>
+
+	<body>
+	
+		<div class = "topbar">
+		
+			<a href = "#">Rentify.</a>
+		
+		</div>
+	
+		<div class = "sidebar">
+			
+			<div class="logo">
+			
+				<a href = "Home.html"><img src="images/rentifyLogo.png" title="Home" alt="Rentify Logo"></a>
+			
+			</div>
+			
+				<br>
+				<button class = "btn" onclick="openSearch()">
+				<img src="images/search.png" title= "Search" alt="search symbol" height="30" width="30">Search</button>
+				<br>
+				<button class = "btn" onclick="openMessages()">
+				<img src="images/message.png" title= "Message" alt="message symbol" height="30" width="30">Messages</button>
+				<a href = "profile.html">
+				<img src="images/profile.png" title= "Profile" alt="profile symbol" height="30" width="30">Profile</a>
+				<button class = "btnA" onclick="openNotif()">
+				<img src="images/notification.png" title= "Announcements" alt="notification symbol" height="30" width="30">Announcements</button>
+				<a href="AboutUs.html">
+				<img src="images/aboutUs.png" title= "About Us" alt="notification symbol" height="30" width="30">About Us</a>
+		
+			</div>
+		
+		
+		
+		<div class = "main">
+		
+			<div id="myOverlay" class="overlay">
+				<span class="closebtn" onclick="closeSearch()" title="Close Overlay">×</span>
+				<div class="overlay-content">
+					
+						<input type="text" placeholder="Search.." name="search">
+						<button type="submit"><img src="images/search.png" height = "30" width = "30"></button>
+					
+				</div>
+			</div>
+			
+			<div id="messagesPopup" class="popup">
+				<span class = "closebtn" onclick = "closeMessages()" title = "Close Messages">x</span>
+				<div class = "popup-content">
+				
+					<div class = "message">
+						<h2>John Smith</h2>
+						<p>Hello, I saw your post about needing your plants to be watered. I would be willing to check on them for you and I can watch for
+						 packages as well. Just let me know if you are still in  need of that.</p>
+					</div>
+					
+					<div class = "message">
+						<h2>Rita Schneider</h2>
+						<p>Hey, I was wondering since you are a plant parent if you could give me a few pointers. I just got my first plant the other day
+						 and have no clue how to care for it.</p>
+					</div>
+					
+					<div class = "message">
+						<h2>Mickey Frey</h2>
+						<p>Hey I am sharing my post with you becuase I saw that you were also in the B building apartments. There is a ton of flooding in 
+						my apartment and I wanted to warn you.</p>
+					</div>
+					
+					<div class = "message">
+						<h2>Stevie Watts</h2>
+						<p>Hello there, is there any way you are looking for a roomate. I just am looking to moving to these apartments and am reaching
+						 out to others about their roomate status.</p>
+					</div>
+				
+				</div>
+				
+			</div>
+			
+			<div id="notifPopup" class="popup">
+				<span class = "closebtn" onclick = "closeNotif()" title = "Close announcements">x</span>
+				<div class = "popup-content">
+				
+					<div class = "message">
+						<h2>Complex Manager</h2>
+						<p>Greetings, due to the Holidays our main office will be closed and all maintenance inquries wont be answered the day before, 
+						after, and day of Thanksgiving. Happy Holidays!</p>
+					</div>
+					
+					<div class = "message">
+						<h2>Complex Manager</h2>
+						<p>Hello all, dryer number 6 is in undergoing repair and should be up and running within the next couple of days. Sorry for the 
+						inconvience.</p>
+					</div>
+					
+					<div class = "message">
+						<h2>Complex Manager</h2>
+						<p>Hello all, the parking lot is getting re-painted and so all vehicles will need to be moved by December 1st at 8am before they start 
+						painting. You can park back in the parking lot by 4pm the same day, thanks.</p>
+					</div>
+					
+				
+				</div>
+				
+			</div>
+	
+			<div id = "imagePost">
+			
+				<img src="images/post1.jpg" alt="plant" class = "align">
+				
+				<br>
+				<br>
+			
+			</div>
+			
+			<div id = "imagePost2">
+			
+				<img src="images/post2.jpg" alt="flood" class = "align">
+			
+			</div>
+		
+		</div>
+		
+		<script>
+			function openSearch() {
+				document.getElementById("myOverlay").style.display = "block";
+			}
+
+			function closeSearch() {
+				document.getElementById("myOverlay").style.display = "none";
+			}
+			
+			function openMessages(){
+				document.getElementById("messagesPopup").style.display = "block";
+			}
+			
+			function closeMessages(){
+				document.getElementById("messagesPopup").style.display = "none";
+			}
+			
+			function openNotif(){
+				document.getElementById("notifPopup").style.display = "block";
+			}
+			
+			function closeNotif(){
+				document.getElementById("notifPopup").style.display = "none";
+			}			
+		</script>
+	
+	</body>
+
+</html>
