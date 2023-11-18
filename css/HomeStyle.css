@@ -1,0 +1,258 @@
+/*CSS file*/
+.main {
+	padding: 20px;
+	
+}
+
+.main::-webkit-scrollbar {
+	
+	display: none;
+	
+}
+
+/*Search overlay*/
+
+.overlay {
+  height: 100%;
+  width: 100%;
+  display: none;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9);
+}
+
+.overlay-content {
+  position: relative;
+  top: 46%;
+  width: 80%;
+  text-align: center;
+  margin-top: 30px;
+  margin: auto;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+  cursor: pointer;
+  color: white;
+}
+
+.overlay .closebtn:hover {
+  color: #ccc;
+}
+
+.overlay input[type=text] {
+  padding: 15px;
+  font-size: 17px;
+  border: none;
+  float: left;
+  width: 80%;
+  background: white;
+}
+
+.overlay input[type=text]:hover {
+  background: #f1f1f1;
+}
+
+.overlay button {
+  float: left;
+  width: 10%;
+  height: 50px;
+  padding: 15px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+.overlay button:hover {
+  background: #bbb;
+}
+
+/*Messages PopUp*/
+
+  .popup {
+  height: 100%;
+  width: 100%;
+  display: none;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9);
+}
+
+.popup-content {
+  position: fixed;
+  top: 5%;
+  width: 75%;
+  left: 200px;
+  text-align: center;
+  margin-top: 30px;
+  margin: auto;
+}
+
+.popup .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+  cursor: pointer;
+  color: white;
+}
+
+.popup .closebtn:hover {
+  color: #ccc;
+}
+
+.message {
+	
+	width: 80%;
+	height: 100px;
+	background-color: white;
+	margin: 10px;
+	padding: 10px;
+	
+}
+
+.message h2{
+	
+	text-align: left;
+	
+}
+
+.message p{
+	
+	text-align: left;
+}
+
+
+.align{
+	
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+	
+}
+  
+/* Logo styles */
+.logo {
+	display: flex;
+	align-items: center;
+}
+
+/* Logo image styles */
+.logo img {
+	height: 100px;
+	width: 160px;
+	margin-right: 10px;
+} 
+
+.topbar{
+	
+	height: 75px;
+	width: 100%;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	background-color: #a1aa9b;
+	overflow: hidden;
+	border: 10px;
+	border-color: black;
+	
+}
+
+.topbar a{
+	
+	float: left;
+	color: #889480;
+	text-align: left;
+	padding: 14px 16px;
+	font-size:35px;
+	text-decoration: none;
+	
+}
+
+
+.topbar a.Title{
+	
+	font-size: 50px;
+	
+}
+
+.sidebar{
+	
+	height: 100%;
+	width: 240px;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	background-color: #a1aa9b;
+	overflow-x: hidden;
+	padding-top: 20px;
+	
+}
+
+.sidebar a{
+	
+	padding: 6px 6px 6px 15px;
+	text-decoration: none;
+	font-size: 25px;
+	color: #000000;
+	display: block;
+	padding: 10px 15px;
+
+}
+
+.sidebar a:hover{
+	
+	color: #c0c9ba;
+	
+}
+.btn{
+	
+	padding: 10px 15px;
+	border: none;
+	background: none;
+	font-size: 25px;
+	
+}
+
+.btn:hover{
+	
+	color: #c0c9ba;
+	
+}
+
+.btnA{
+	
+	padding: 10px 15px;
+	border: none;
+	background: none;
+	font-size: 25px;
+	width: 250px;
+	text-align: left;
+	
+}
+
+.btnA:hover{
+	
+	color: #c0c9ba;
+	
+}
+
+body{
+	
+	background-color: #dee1dd;
+	font-family: Tahoma, sans-serif;
+	
+}
