@@ -218,10 +218,13 @@ form button {
     border-radius: 5px;
 }
 
-form button {
-    background-color: #889480;
-    color: white;
-    cursor: pointer;
+.signup-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #3498db; /* Change the color as needed */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
 }
 
 form button:hover {

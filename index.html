@@ -48,7 +48,7 @@
 						<span class="close-button" id="closePopup" onclick="off()">&#10006;</span>
 
 						<h1>Sign Up</h1>
-						<form action="Home.html" method="post">
+						<form>
 							<!-- Name field -->
 							<label for="name">Name:</label>
 							<input type="text" id="name" name="name" required>
@@ -74,7 +74,7 @@
 							<label for="password">Create Password:</label>
 							<input type="password" id="password" name="password" required>
 
-							<button type="submit">Sign Up</button>
+							<a href="Home.html" class="signup-button">Sign Up</a>
 							<p>Already have an account? <a href="#" onclick="off(); onLogin();">Login Here!</a></p>
         					</form>
 						
@@ -85,7 +85,7 @@
 						<span class="close-button" id="closeLoginPopup" onclick="offLogin()">&#10006;</span>
 				
 						<h1>Login</h1>
-						<form action="Home.html" method="post">
+						<form>
 							<!-- Username field -->
 							<label for="loginUsername">Username:</label>
 							<input type="text" id="loginUsername" name="loginUsername" required>
@@ -93,7 +93,7 @@
 							<!-- Password field -->
 							<label for="loginPassword">Password:</label>
 							<input type="password" id="loginPassword" name="loginPassword" required>
-							<button type="submit">Login</button>
+							<a href="Home.html" class="signup-button">Login</a>
 							<p>Don't have an account? <a href="#" onclick="offLogin(); onSignup();">Signup Here!</a></p>
 						</form>
 					</div>
